@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Lora:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  text-decoration: none;
+}
+
+:root {
+  --title: "Kablammo", cursive;
+  --background: #ded0c5;
+  --azul-escuro: #0b0b2f;
+  --mostarda: #c9b101;
+  --verde: #245b5d;
+  --rosa-queimado: #bd9d9c;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--azul-escuro);
+}
+
+/*HEADER*/
+header {
+  background-color: var(--rosa-queimado);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--mostarda);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo i {
+  color: var(--verde);
+  text-shadow: 4px 4px 9px rgba(201, 177, 1, 0.6);
+  font-size: 5.25rem;
+  padding-right: 0.5rem;
+}
+
+#logo h1 {
+  font-family: "Kablammo", cursive;
+  font-size: 4rem;
+  color: var(--verde);
+  text-shadow: 4px 4px 9px rgba(201, 177, 1, 0.6);
+}
+
+#menu-list {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  list-style: none;
+}
+
+.menu-list__item  a{
+  padding: 0.5rem;
+  color: var(--verde);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-list__item a:hover {
+  cursor: pointer;
+  background-color: var(--verde);
+  color: var(--mostarda);
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+/*Conteúdo Principal*/
+.container {
+  margin:.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+}
+
+.banner-pic {
+  border-radius: 10px;
+  width: 100%;
+  height: 700px;
+}
+
+.missao {
+  padding: 1rem;
+  text-align: center;
+}
+
+#missao-title {
+  color: var(--verde);
+  text-shadow: 4px 4px 9px rgba(201, 177, 1, 0.6);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.missao-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#missao-box__text {
+  width: 50%;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+.divisor1 {
+  transform: scaleX(-1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#acao {
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+#acao-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.acao-card__item {
+  border: 1rem solid var(--verde);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin: 0.5rem;
+  transition: 0.3s;
+}
+
+.acao-card__item:hover {
+  border: 1rem solid var(--rosa-queimado);
+  background-color: var(--verde);
+}
+
+.acao-card__item a {
+  font-weight: bold;
+  color:var(--verde);
+}
+
+.acao-card__item a:hover {
+  color: var(--mostarda);
+}
+
+.acao-card__pic {
+  width: 150px;
+}
+
+.divisor2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.details-card {
+  padding: 1rem;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.details-card__text {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.details-card__text h2 {
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: var(--verde);
+  text-shadow: 4px 4px 9px rgba(201, 177, 1, 0.6);
+}
+
+.details-card__pic {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.right {
+  box-shadow: 35px 9px 58px 0px rgba(36, 91, 93, 0.89);
+  -webkit-box-shadow: 35px 9px 58px 0px rgba(36, 91, 93, 0.89);
+  -moz-box-shadow: 35px 9px 58px 0px rgba(36, 91, 93, 0.89);
+}
+
+.left {
+  box-shadow: -33px 9px 58px 0px rgba(36, 91, 93, 0.89);
+  -webkit-box-shadow: -33px 9px 58px 0px rgba(36, 91, 93, 0.89);
+  -moz-box-shadow: -33px 9px 58px 0px rgba(36, 91, 93, 0.89);
+}
+
+.impacto {
+  height:300px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  font-weight:bold;
+
+}
+
+.impacto-parceria {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.impacto-list {
+  margin-left: 1rem;
+}
+
+.impacto-list h2, h2 {
+  font-family: "Kablammo", cursive;
+  margin:.2rem;
+  text-align: center;
+  color: var(--verde);
+  text-shadow: 4px 4px 9px rgba(201, 177, 1, 0.6);
+}
+
+/*FORMULÁRIO*/
+
+.formulario{
+  background-color:var(--rosa-queimado);
+  height:500px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  font-weight:bold;
+
+}
+#form-title {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+}
+
+.participe{
+  border:dashed var(--verde);
+  margin-bottom:.5rem;
+}
+
+#nome {
+  width:200px;
+}
+
+input{
+  padding:.2rem;
+  border-radius:5px;
+  background-color:var(--background);
+}
+
+input:focus{
+  font-weight:bold;
+  color:var(--verde);
+  text-shadow:4px 4px 9px rgba(201, 177, 1, 0.6);
+}
+
+
+.identificacao{
+  margin-left:.5rem;
+}
+
+.assunto{
+  margin-top:.5rem;
+  margin-bottom:.5rem;
+  border:none;
+  padding:.5rem;
+}
+
+.mensagem{
+  border:none;
+  padding:.5rem;
+}
+
+textarea{
+   background-color:var(--background);
+}
+
+textarea:focus{
+  font-weight:bold;
+  color:var(--verde);
+  text-shadow:4px 4px 9px rgba(201, 177, 1, 0.6);
+}
+
+
+.btn{
+  float:right;
+  margin:.2rem;
+  width:150px;
+  border: 1px solid var(--mostarda);
+  background-color:var(--verde);
+  font-weight:bold;
+  color:var(--mostarda);
+  transition:.5s;
+}
+
+.btn:hover{
+  border: 1px solid var(--verde);
+  background-color:var(--mostarda);
+  color:var(--verde);
+  width:200px;
+}
+
+/*FOOTER*/
+footer {
+  height: 50px;
+  background-color: var(--rosa-queimado);
+  color: var(--background);
+  border-top:2px solid var(--mostarda);
+}
+
+#sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.links {
+  margin-left: 0.5rem;
+}
+
+.links a i {
+  padding: 0.2rem;
+  color: var(--background);
+}
